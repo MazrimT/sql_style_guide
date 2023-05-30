@@ -10,7 +10,7 @@ with cte1 as (
         ,t4.c2          as order_date
     from table4 t4
 )                                          
-select [distinct]                                       -- select on it's own row, if distinct is used it goes on the same row as select
+select distinct                                         -- select on it's own row, if distinct is used it goes on the same row as select
      t1.c1                                              -- each column on it's own row
     ,t1.c2
     ,case                                               -- case on its own row
