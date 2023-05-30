@@ -7,6 +7,8 @@ This is my atempt at plotting down as much as possible of how to write maintaina
 This is a generic style that should work for most SQL-type databases.
 For some, like SQL Server where you can do "alias = source" instead of "source as alias" some things and be turned around.
 
+Nothing in this repo is anything other than my personal opinions.
+
 ## Zen of Python inspired
 The first part of the Zen of Python states that:
 ```
