@@ -16,6 +16,9 @@ select distinct                                         -- select on it's own ro
     ,case                                               -- case on its own row
         when t1.c3 = 1                                  -- "when" indented 1 step from case
             then 1                                      -- "then" indented 1 step from when
+        when t1.c1 = 1
+        and t2.c1 = 2                                   -- if multiple values are checked each "and" should be on its own row.
+            then 2                  
         else 2                                          -- "else" has same indentation as "when"
      end                as c3                           -- "end" on it's own row with the alias for the column
 from table1 t1                                          -- "from" on same indentation as select
